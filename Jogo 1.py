@@ -13,7 +13,7 @@ def limpar():
         os.system('clear')
 
 limpar()
-print("Deseja qual dificuldade? \n[01] Fácil \t 2 Números \n[02] Normal \t 5 Números \n[03] Difícil \t 10 Números\n[04] Insano \t 10 Números e 5 chances")
+print("Deseja qual dificuldade? \n[01] Facil \t 2 Numeros \n[02] Normal \t 5 Numeros \n[03] Dificil \t 10 Numeros\n[04] Insano \t 10 Numeros e 5 chances")
 
 
 tipo = int(input())
@@ -36,7 +36,7 @@ if tipo != 4:
     while True:
         num = randint(lista[0], lista[1])
         limpar()
-        print("Digite um número entre",lista[0], "e", sorted(lista, reverse=True)[0])
+        print("Digite um numero entre",lista[0], "e", sorted(lista, reverse=True)[0])
         print("")
         print("Pontos", pontos, "\t Tentativa", tentativas)
 
@@ -44,21 +44,21 @@ if tipo != 4:
 
         if tent > 10:
             limpar()
-            print("Seu número não está dentro da lista de permitidos!!!")
-            print("Por favor, escreva somente números listados!")
+            print("Seu numero não esta dentro da lista de permitidos!!!")
+            print("Por favor, escreva somente numeros listados!")
             input("Digite algo para continuar ")
 
         elif tent == num:
             limpar()
-            print("Parabéns você acertou! =)")
+            print("Parabéns voce acertou! =)")
             pontos += 1
             tentativas += 1
             input(print("Digite algo para continuar"))
         
         else:
             limpar()    
-            print("Que pena, você errou! =(")
-            print("O número correto era", num)
+            print("Que pena, voce errou! =(")
+            print("O numero correto era", num)
             tentativas += 1
             input("Digite qualquer coisa para continuar.")
     
@@ -70,30 +70,30 @@ if tipo == 4:
         limpar()
         num = randint(lista[0], lista[1])
         print("Seja bem vindo ao modo Insano \n")
-        print("Você tem", chances, "chances ainda")
-        print("Sempre que acertar, irá ganhar duas chances \nE se perder, irá perder uma chance")
+        print("Voce tem", chances, "chances ainda")
+        print("Sempre que acertar, ira ganhar duas chances \nE se perder, ira perder uma chance")
         print("\n\tBoa Sorte")
-        print("\nNúmeros Permitidos\n", sorted(lista))
+        print("\nNumeros Permitidos\n", sorted(lista))
         tent = int(input("R."))
 
         if tent > 10:
             limpar()
-            print("Seu número não está dentro da lista de permitidos!!!")
-            print("Por favor, escreva somente números listados!")
+            print("Seu numero não esta dentro da lista de permitidos!!!")
+            print("Por favor, escreva somente numeros listados!")
             input("Digite algo para continuar ")
 
         elif tent == num:
             limpar()
-            print("Parabéns você acertou! =)")
+            print("Parabéns voce acertou! =)")
             chances += 2
             input(print("Digite algo para continuar"))
         
         else:
             limpar()    
-            print("Que pena, você errou! =(")
-            print("O número correto era", num)
+            print("Que pena, voce errou! =(")
+            print("O numero correto era", num)
             chances -= 1
             input("Digite qualquer coisa para continuar.")
     limpar()
-    print("Que pena, você perdeu\nTente novamente sempre que quiser")
+    print("Que pena, voce perdeu\nTente novamente sempre que quiser")
     print("\nObrigado por jogar \nFeito por: Matheus Martins")
