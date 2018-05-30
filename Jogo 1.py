@@ -62,8 +62,8 @@ if tipo != 4:
             tentativas += 1
             input("Digite qualquer coisa para continuar.")
     
-limpar()
-print("Obrigado por jogar \nFeito por: Matheus Martins")
+    limpar()
+    print("Obrigado por jogar \nFeito por: Matheus Martins")
 
 if tipo == 4:
     while chances > 0:
